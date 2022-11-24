@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "poetry-demo"
-version = "0.1.0"
+version = "3.3.0"
 description = ""
 authors = ["Amir Boussoffara <amir.boussoara@qorvo.com>"]
 readme = "README.md"
