@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "poetry-demo"
+version = "0.1.0"
+description = ""
+authors = ["Amir Boussoffara <amir.boussoara@qorvo.com>"]
+readme = "README.md"
+packages = [{include = "poetry_demo"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+scapy = "^2.4.5"
+
+[tool.poetry.group.dev.dependencies]
+opencv-python = "^4.6.0.66"
+
+[tool.poetry.scripts]
+run_test = "poetry_demo.run:main"
+
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
